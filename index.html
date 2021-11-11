@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beautysalon.</title>
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="#">
+                <img src="assents/pac-de-icons/Logo.png" alt="Logo beautysalon">
+            </a>
+          
+                <img id="button-open" onclick="ModalOverlay.open()" src="assents/pac-de-icons/menu.png" alt="ícone menu">
+            
+        </div>
+            <div class="modal-overlay">
+                    <img id="button-close" onclick= "ModalOverlay.close()" src="assents/pac-de-icons/close.png" alt="ícone de fechar o menu">
+                <div class="links">
+                    <nav>
+                        <ul onclick="ModalOverlay.close()" class="nav">
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#services">Serviços</a></li>
+                            <li><a href="#depositions">Depoimentos</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </header>
+
+    <main id="contents">
+        <section id="home">
+            <div class="position">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" alt="imagem da cabeleireira">
+                </div>
+            </div>
+
+            <div id="presentation">
+                <div class="presentation-items">
+                    <h2>
+                        Saúde natural para os seus cabelos
+                    </h2>
+                    <p>
+                        Um salão exclusivo em São paulo, especializado em tratamentos naturais
+                    </p>
+                    <button onclick="ModalAgends.open()">
+                        Agendar um horário
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal-agends">
+                <div class="agends">
+                    <div class="form">
+                        <h3>
+                            Agende aqui o seu horário
+                        </h3>
+                        <form action="">
+                            <div class="input-ground">
+                                <label for="">Nome completo</label>
+                                <input 
+                                type="text" 
+                                name="Name" 
+                                id="Name"
+                                placeholder="Digite aqui seu nome">
+                            </div>
+
+                            <div class="input-ground">
+                                <label for="">Horário</label>
+                                <input type="time" 
+                                name="schedules" 
+                                id="schedules">
+                            </div>
+
+                            <div class="input-ground">
+                                <label for="">Data</label>
+                                <input type="date" 
+                                name="date" 
+                                id="date">
+                            </div>
+
+                            <div class="button">
+                                
+                                <a id="cancell" onclick="ModalAgends.close()" href="">Cancelar</a>
+
+                                <button id="salve">
+                                    Salvar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+          
+        </section>
+        <div id="space"></div>
+
+        <section id="about">
+            <div class="image-about">
+                <img  src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="imagem da equipe do salão">
+            </div>
+            
+            <div class="contents-about">
+                <h2>
+                    Sobre nós
+                </h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis arcu quis nisi luctus, id accumsan felis tristique. Proin quis bibendum diam. Sed consequat nisl laoreet eros ultricies pellentesque. Nullam in est porta, pellentesque massa vitae, vehicula risus
+                    </p> 
+
+                    <p>
+                        In placerat, felis vitae sodales dictum, lacus quam pretium mi, ut pretium urna turpis eu dui. Vestibulum id ullamcorper nibh. Donec luctus, nunc finibus elementum suscipit, tortor augue vulputate sapien, vitae feugiat enim augue sed. 
+                    </p>
+
+                    <p>
+                        Quisque id aliquam elit. Suspendisse congue pharetra maximus. Duis rutrum velit a leo euismod dictum. Sed sodales est efficitur arcu tincidunt tincidunt. Curabitur fringilla, risus at feugiat feugiat, nisl nulla tincidunt tellus, elementum elementum lorem nisl eleifend dolor. Nullam eget dui at sem ullamcorper luctus.
+                    </p>
+            </div>
+        </section>
+        <div id="space"></div>
+
+        <section id="services">
+            <div class="title-services">
+                <h2>serviços</h2>
+
+                <p>
+                    Com mais de 10 anos no mercado, o <span>Beautysalon</span> já conquistou clientes de inúmeros países com seus tratamentos excluisvos e totalmente naturais.
+                </p>
+            </div>
+
+            <div class="apresentation-services">
+                <div class="block-services">
+                    <img src="assents/pac-de-icons/woman-hair.png" alt="Ícone Terapia capilar">
+
+                    <h3>
+                        Terapia Capilar
+                    </h3>
+
+                    <p>
+                        Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, incluse os longos e finos.
+                    </p>
+                
+                </div>
+                 
+                <div class="block-services">
+                    <img src="assents/pac-de-icons/trim.png" alt="Ícone Tesoura">
+
+                    <h3>
+                        Cortes
+                    </h3>
+
+                    <p>
+                        A nossa equipe é repleta de profisionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.
+                    </p>
+                </div>
+
+                <div class="block-services">
+                    <img src="assents/pac-de-icons/cosmetic.png" alt="Ícones tratamentos">
+
+                    <h3>
+                        Tratamentos
+                    </h3>
+
+                    <p>
+                        O beautysalon conta com diversos tratamentos naturais e totalmente veganos, para qualquer tipo de cabelo.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+        <div id="space"></div>
+
+        <section id="depositions">
+                    <div id="title-depositions">
+                        <h2>
+                            Depoimentos de quem já passou por aqui
+                        </h2>
+                    </div>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="clients swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente Meu cabelo mudou muito depois que eu comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.
+                                </p>
+                            <cite>
+                                <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="">
+                                Wanessa Souza
+                            </cite>
+                        </blockquote>
+                          </div>
+                          
+                          <div class="clients swiper-slide">
+                            <blockquote>
+                                <p> <span>&ldquo;</span>
+                                    Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha experiência foi incrível, eu continuo fazendo terapia capilar e isso salvou o meu cabelo. Adoro todos os profissionais do Beautysalon.
+                                </p>
+                            <cite>
+                                <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="">
+                                Luana Falcão
+                        </cite>
+                        </blockquote>
+                            </div>
+                          <div class="clients swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis nemo, voluptatem quae officia in qui ad, eius cupiditate sequi at minima pariatur. Vero, quidem? Non dolores expedita soluta quasi!
+                                </p>
+                                <cite>
+                                    <img src="https://randomuser.me/api/portraits/women/92.jpg" alt="">
+                                    Camila Souza
+                                </cite>
+                            </blockquote>
+                          </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                      </div>
+        </section>
+        <div id="space"></div>
+
+        <section id="contact">
+            <div class="contents-contact">
+                <div class="contacts">
+                    <h2>
+                        Entre contato com a gente!
+                    </h2>
+                    <p>
+                        Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.
+                    </p>
+                    <a
+                    id="button-contact"
+                    href="https://wa.me/5522988724559"
+                    target="_blank">
+                    <img src="assents/pac-de-icons/whats.png" alt="">
+                    Entrar em contato
+                    </a>
+                </div>
+                <div class="informations">
+                    <address>
+                        <img src="assents/pac-de-icons/phone.png" alt="Ícone telefone">
+                        11 99845-6754
+                    </address>
+
+                    <address>
+                        <img src="assents/pac-de-icons/map-pin.png" alt="Ícone mapa">
+                        R.Aumauri Souza, 346
+                    </address>
+
+                    <address>
+                        <img src="assents/pac-de-icons/mail.png" 
+                        alt="Ícone email">
+                        contato@beautysalon.com
+                    </address>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+   
+    
+    <footer>
+        
+        <div id="footer">
+            <div class="content-footer">
+                <img src="assents/pac-de-icons/Logo-footer.png" alt="Logo beautysalon">
+                <p>
+                    ©2021 Beautysalon.
+                </p>
+                <p>
+                    Todos os direitos reservados
+                </p>
+            </div>
+
+            <div class="networks">
+                <img id="net" src="assents/pac-de-icons/instagram.png" alt="Ícone instagram">
+                <img id="net" src="assents/pac-de-icons/facebook.png" alt="Ícone facebook">
+                <img id="net" src="assents/pac-de-icons/youtube.png" alt="Ícone youtube">
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <a href="#"><img src="assents/pac-de-icons/seta-para-cima.png" alt="Voltar ao topo"></a>
+    </div>
+
+             <!-- Scripts -->
+
+<!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- ScrollReveal JS-->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- Script-->
+    <script src="script.js"></script>
+
+</body>     
+</html>
